@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metehan's Professional Blog</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loading-text">Loading...</div>
+    </div>
+    
+
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Metehan's Blog</div> <!-- Logo Area -->
+            <ul class="nav-links"> <!-- Navigation Links -->
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Header Content -->
+        <div class="header-content">
+            <h1>Welcome to My Professional Blog!</h1>
+            <p>Python | Data Scientist | Machine Learning</p>
+            <a href="#about" class="btn-primary">Learn More</a> <!-- Button to "About Me" Section -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Metehan. I started my career as a CNC operator, but for the past two years, I've been focused on software development, especially in data science. I work on projects involving machine learning, natural language processing (NLP), and data visualization.
+                    My goal is to become a skilled software developer and realize my dreams in the tech industry. Outside of work, I'm passionate about social media, computers, and technology—especially motorcycles and cars. These interests drive my curiosity and motivate me to keep exploring new opportunities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <!-- Project 1: Production Data Analysis -->
+                    <a href="https://github.com/MetehanKul/Production_Analysis_Report" target="_blank" class="project-item">
+                        <h3>Production Data Analysis</h3>
+                        <p>
+                            Developed a production analysis tool using Python for data cleaning and EDA. Created interactive Power BI dashboards to track KPIs like production efficiency, scrap rates, and profitability. The project offered key insights for optimizing processes and improving performance.
+                        </p>
+                    </a>
+
+                    <!-- Project 2: Ford Car Predict -->
+                    <a href="https://github.com/MetehanKul/Ford_Predict" target="_blank" class="project-item">
+                        <h3>Ford Car Predict</h3>
+                        <p>
+                            This project involves developing a simple interface application that predicts the prices of Ford vehicles. The application will allow users to input various attributes of the vehicle (such as model, year, mileage, engine size, etc.) and will use machine learning algorithms to estimate the price based on the provided data.
+                        </p>
+                    </a>
+
+                    <!-- Project 3: House Predict -->
+                    <a href="https://github.com/MetehanKul/House_price_predict" target="_blank" class="project-item">
+                        <h3>House Predict</h3>
+                        <p>
+                            Created a machine learning model to predict house prices using features like location, size, and amenities. Developed a user-friendly interface to allow easy input and visualization of predictions, making it accessible for users to estimate property values effectively.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="contact-icons">
+                    <!-- Email Icon -->
+                    <a href="mailto:kulmetehan61@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/metehan-kul" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/MetehanKul" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Metehan's Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Preloader (Loading Animation) -->
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.style.display = 'none'; // Preloader disappears when the page fully loads
+        });
+    </script>
+</body>
+
+</html>
+
+<script>
+    window.addEventListener('load', function () {
+        document.body.classList.add('loaded'); // Sayfa yüklendiğinde "loaded" sınıfı eklenir
+    });
+</script>
